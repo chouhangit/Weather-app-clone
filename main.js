@@ -9,7 +9,7 @@ form.addEventListener("submit",getdata)
 async function getdata(e){
     e.preventDefault()
     // let name=input.value
-    const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=e794cbea8ad64bc882d84907231101&q=${input.value}&aqi=yes`)
+    const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=30727f1ece8c408fa0260647232002&q=${input.value}&aqi=yes`)
     const data = await res.json();
     const location = data.location.name;
     const temprature = data.current.temp_c;
